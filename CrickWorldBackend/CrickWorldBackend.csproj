@@ -194,6 +194,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TeamDetailsController.cs" />
+    <Compile Include="Controllers\UserDetails1Controller.cs" />
     <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -257,6 +258,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\UserDetails1\Create.cshtml" />
+    <Content Include="Views\UserDetails1\Delete.cshtml" />
+    <Content Include="Views\UserDetails1\Details.cshtml" />
+    <Content Include="Views\UserDetails1\Edit.cshtml" />
+    <Content Include="Views\UserDetails1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
