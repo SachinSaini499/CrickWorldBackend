@@ -10,17 +10,17 @@ using CrickWorldBackend.Models;
 
 namespace CrickWorldBackend.Controllers
 {
-    public class UserDetails1Controller : Controller
+    public class UserDetailsMVCController : Controller
     {
         private CrickWorldUserContext db = new CrickWorldUserContext();
 
-        // GET: UserDetails1
+        // GET: UserDetailsMVC
         public ActionResult Index()
         {
             return View(db.UserDetails.ToList());
         }
 
-        // GET: UserDetails1/Details/5
+        // GET: UserDetailsMVC/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +35,13 @@ namespace CrickWorldBackend.Controllers
             return View(userDetails);
         }
 
-        // GET: UserDetails1/Create
+        // GET: UserDetailsMVC/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: UserDetails1/Create
+        // POST: UserDetailsMVC/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +58,7 @@ namespace CrickWorldBackend.Controllers
             return View(userDetails);
         }
 
-        // GET: UserDetails1/Edit/5
+        // GET: UserDetailsMVC/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace CrickWorldBackend.Controllers
             return View(userDetails);
         }
 
-        // POST: UserDetails1/Edit/5
+        // POST: UserDetailsMVC/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace CrickWorldBackend.Controllers
             return View(userDetails);
         }
 
-        // GET: UserDetails1/Delete/5
+        // GET: UserDetailsMVC/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace CrickWorldBackend.Controllers
             return View(userDetails);
         }
 
-        // POST: UserDetails1/Delete/5
+        // POST: UserDetailsMVC/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

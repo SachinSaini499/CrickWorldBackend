@@ -194,7 +194,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TeamDetailsController.cs" />
-    <Compile Include="Controllers\UserDetails1Controller.cs" />
+    <Compile Include="Controllers\UserDetailsMVCController.cs" />
     <Compile Include="Controllers\UserDetailsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -234,9 +234,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -263,6 +260,11 @@
     <Content Include="Views\UserDetails1\Details.cshtml" />
     <Content Include="Views\UserDetails1\Edit.cshtml" />
     <Content Include="Views\UserDetails1\Index.cshtml" />
+    <Content Include="Views\UserDetails2\Create.cshtml" />
+    <Content Include="Views\UserDetails2\Delete.cshtml" />
+    <Content Include="Views\UserDetails2\Details.cshtml" />
+    <Content Include="Views\UserDetails2\Edit.cshtml" />
+    <Content Include="Views\UserDetails2\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
